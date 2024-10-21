@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./component/Header";
 import Container from "./component/Container";
-import Skill from "./component/Skill";
 import Box from "./component/Box";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";

@@ -1,9 +1,9 @@
 import React from "react";
 
 const Skill = () => {
-    const technicalSkillWriteup = ` have a diverse set of technical skills that enable me to build dynamic, user-friendly, and optimized websites. From coding sleek interfaces to implementing SEO strategies, I am dedicated to creating seamless digital experiences. Here’s a snapshot of my core technical expertise:
+  const technicalSkillWriteup = ` have a diverse set of technical skills that enable me to build dynamic, user-friendly, and optimized websites. From coding sleek interfaces to implementing SEO strategies, I am dedicated to creating seamless digital experiences. Here’s a snapshot of my core technical expertise:
 
-`
+`;
   return (
     <>
       {/* SKILL SECTION */}
@@ -16,9 +16,7 @@ const Skill = () => {
               Technical<span className="text-[rgb(255,130,255)]"> skills.</span>
             </p>
           </header>
-          <p className="text-sm max-sm:text-center">
-            {technicalSkillWriteup}
-          </p>
+          <p className="text-sm max-sm:text-center">{technicalSkillWriteup}</p>
         </section>
 
         {/* right side */}
