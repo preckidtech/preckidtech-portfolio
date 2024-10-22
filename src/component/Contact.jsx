@@ -11,7 +11,12 @@ const Contact = () => {
   const phoneNumber = "08141893501";
   const emailAddress = "project-manager@preckidtech.com.ng";
   const location = "Osun State, Nigeria";
-
+  let userName = document.getElementById("name");
+  let userEmail = document.getElementById("email");
+  let userMessage = document.getElementById("message");
+  let regSucess = document.querySelector(".reg-sucess");
+  // let message = document.querySelector(".message")
+  console.log(regSucess);
   const form = useRef(); // Initialize useRef
 
   const sendEmail = (e) => {
@@ -21,12 +26,26 @@ const Contact = () => {
       .sendForm("service_aujtew5", "template_f27nluk", form.current, {
         publicKey: "5cebYDqofOwU_VDmz",
       })
+
       .then(
         () => {
-          console.log("Sent Successfully. Well done. Check your mail now");
+          // console.log("Sent Successfully. Well done. Check your mail now");
+          // user;
+          // alert("Sent Successful");
+          regSucess.style.display = "block";
+          regSucess.innerHTML = `Message Sent`;
+          setTimeout(() => regSucess.remove(), 2000);
+          userName.value = "";
+          userEmail.value = "";
+          userMessage.value = "";
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          // console.log("FAILED...", error.text);
+
+          // alert("failed");
+          regSucess.style.display = "block";
+          regSucess.innerHTML = `Message Not Sent`;
+          setTimeout(() => regSucess.remove(), 3000);
         }
       );
   };
@@ -87,7 +106,7 @@ const Contact = () => {
                 Full Name
               </label>
               <input
-                id="fullName"
+                id="name"
                 name="user_name"
                 type="text"
                 placeholder="Enter Name"
@@ -131,7 +150,7 @@ const Contact = () => {
                 <FaMailBulk />
               </span>
             </div>
-
+            <section className="reg-sucess hidden bg-white text-green-800 font-extrabold text-md py-3 text-center  rounded-md "></section>
             <button
               type="submit"
               className="w-full py-2 mt-4 bg-[rgb(255,130,255)] text-black font-semibold rounded-md hover:bg-opacity-80 transition"

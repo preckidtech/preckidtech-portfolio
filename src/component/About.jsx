@@ -29,25 +29,25 @@ const About = () => {
 
         <section className="grid grid-cols-2 gap-20 max-md:grid-cols-1 max-sm:grid-cols-1 gap-y-10 justify-center align-middle items-center">
           <section>
-            <div
+            {/* <div
               id="profile-spin"
-              className="p-6 border-[1px] border-[rgb(255,130,255)] rounded-full w-80 h-80  m-auto"
-            >
-              <FaHtml5 className="absolute text-4xl text-green-500 animate-bounce " />
+              className="p-6 border-[1px] border-[rgb(255,130,255)] rounded-full w-80 h-80 max-sm:w-52 max-sm:p-2 max-sm:h-52 m-auto"
+            > */}
+            {/* <FaHtml5 className="absolute text-4xl text-green-500 animate-bounce " />
               <IoLogoJavascript
                 id="spin"
                 className="relative float-right text-4xl text-green-500 animate-spin"
+              /> */}
+            <div className="p-6 border-2 border-[rgb(255,130,255)] h-60 w-60 rounded-full m-auto">
+              <img
+                className="border-[1px] border-[rgb(255,130,255)] rounded-full h-full object-cover object-center hover:ease-in-out hover:scale-90 duration-200 transition-transform"
+                src={profilePics}
+                alt="profile-img"
               />
-              <div className="p-6 border-2 border-[rgb(255,130,255)] rounded-full h-full w-full m-auto">
-                <img
-                  className="border-[1px] border-[rgb(255,130,255)] rounded-full h-full object-cover object-center hover:ease-in-out hover:scale-90 duration-200 transition-transform"
-                  src={profilePics}
-                  alt="profile-img"
-                />
-                <FaReact className="text-4xl absolute text-green-500 animate-pulse" />
-                <IoLogoCss3 className="text-4xl relative float-right text-green-500 animate-bounce" />
-              </div>
+              {/* <FaReact className="text-4xl absolute text-green-500 animate-pulse" />
+                <IoLogoCss3 className="text-4xl relative float-right text-green-500 animate-bounce" /> */}
             </div>
+            {/* </div> */}
           </section>
 
           {/* About Me Content */}

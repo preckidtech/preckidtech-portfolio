@@ -1,55 +1,64 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-            
+
+body {
+  width: 100%;
+}
 
 #service-card:hover .line {
-    background-color: black;
-  }
-  
-  #profile-spin {
-    animation-iteration-count: 2;
-  }
-  
-  #spin {
-    animation-direction: alternate-reverse;
-  }
-  #service-card {
-    transition: all 0.3s .1s ease;
-  }
-  
-  #service-card:hover {
-    transform:translateY(-20px)
-    
-  }
-  
-  @keyframes bounceUp {
-     
-    from{
-      transform:translateY(0)
-    }
+  background-color: black;
+}
 
-    to{
-    
-    }
-    
+#profile-spin {
+  animation-iteration-count: 2;
+}
+
+#spin {
+  animation-direction: alternate-reverse;
+}
+#service-card {
+  transition: all 0.3s 0.1s ease;
+}
+
+#service-card:hover {
+  transform: translateY(-20px);
+}
+
+@keyframes bounceUp {
+  from {
+    transform: translateY(0);
   }
-  #header {
-    background: url(./assets/banner/banner.jpg), rgba(0, 0, 0, 0.9);
-    background-blend-mode: darken;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
+
+  to {
   }
-  
-  #service-card:hover button {
-    background-color: gray;
-    /* display: block; */
-    opacity: 1;
-  }
+}
+#header {
+  background: url(./assets/banner/banner.jpg), rgba(0, 0, 0, 0.9);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#service-card:hover button {
+  background-color: gray;
+  /* display: block; */
+  opacity: 1;
+}
 
 #service-card button {
-  transform: .3s ease;
+  transform: 0.3s ease;
   /* display: none; */
-  opacity: 0;  
+  opacity: 0;
+}
+
+.reg-sucess {
+  background-color: white;
+  color: green;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
 }
