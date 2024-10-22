@@ -3,6 +3,7 @@ import Button from "./Button";
 import logo from "../assets/logo/preckid logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { SiReaddotcv } from "react-icons/si";
+// import Resume from "../assets/resume/preckid-tech/src/assets/resume/oyebode-precious.pdf";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

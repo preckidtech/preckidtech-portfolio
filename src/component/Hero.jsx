@@ -12,22 +12,22 @@ const Hero = () => {
     {
       name: "Github",
       icon: <FaGithub />,
-      link: "",
+      link: "https://github.com/OYEBODEPRECIOUS",
     },
     {
       name: "Email",
       icon: <MdOutlineMail />,
-      link: "https://api.whatsapp.com/message/K2JH7N3JZJ6BO1",
+      link: "",
     },
     {
       name: "Linkedin",
       icon: <TiSocialLinkedin />,
-      link: "https://api.whatsapp.com/message/K2JH7N3JZJ6BO1",
+      link: "https://www.linkedin.com/in/oyebode-precious",
     },
     {
       name: "Upwork",
       icon: <FaUpwork />,
-      link: "https://api.whatsapp.com/message/K2JH7N3JZJ6BO1",
+      link: "https://www.upwork.com/freelancers/preciouso80",
     },
   ];
   return (
