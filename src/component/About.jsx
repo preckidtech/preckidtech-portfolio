@@ -3,7 +3,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
-import myPics from "../assets/profile image/my pics.jpg";
+// import myPics from "../assets/profile image/my pics.jpg";  
 import profilePics from "../assets/profile image/profile-pics.jpg";
 const About = () => {
   const aboutMe = {

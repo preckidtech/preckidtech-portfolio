@@ -40,12 +40,9 @@ const Contact = () => {
           userMessage.value = "";
         },
         (error) => {
-          // console.log("FAILED...", error.text);
-
+          console.log("FAILED...", error.text);
+          
           // alert("failed");
-          regSucess.style.display = "block";
-          regSucess.innerHTML = `Message Not Sent`;
-          setTimeout(() => regSucess.remove(), 3000);
         }
       );
   };
