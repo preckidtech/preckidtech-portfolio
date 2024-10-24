@@ -3,8 +3,8 @@ import { FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
-// import myPics from "../assets/profile image/my pics.jpg";  
-import profilePics from "../assets/profile image/profile-pics.jpg";
+// import myPics from "../assets/profile image/my pics.g";
+import profilePics from "../assets/profile image/profile-picture.png";
 const About = () => {
   const aboutMe = {
     firstParagraph:
@@ -38,11 +38,10 @@ const About = () => {
                 id="spin"
                 className="relative float-right text-4xl text-green-500 animate-spin"
               /> */}
-            <div className="p-6 border-2 border-[rgb(255,130,255)] h-60 w-60 rounded-full m-auto">
+            <div className="p-6 border-2 border-[rgb(255,130,255)] h-[300px] w-[300px] max-sm:h-[250px] max-sm:w-[250px] rounded-full overflow-hidden  m-auto">
               <img
-                className="border-[1px] border-[rgb(255,130,255)] rounded-full h-full object-cover object-center hover:ease-in-out hover:scale-90 duration-200 transition-transform"
+                className="border-[1px] border-[rgb(255,130,255)]hover:ease-in-out w-full h-full rounded-full object-cover"
                 src={profilePics}
-                alt="profile-img"
               />
               {/* <FaReact className="text-4xl absolute text-green-500 animate-pulse" />
                 <IoLogoCss3 className="text-4xl relative float-right text-green-500 animate-bounce" /> */}

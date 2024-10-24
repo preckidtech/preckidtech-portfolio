@@ -31,7 +31,7 @@ const Service = () => {
   ];
   return (
     <>
-      <section className="">
+      <section>
         <header className="text-center">
           <p className="text-sm text-gray-500">SERVICES</p>
           <p className="text-2xl font-bold pb-8">
@@ -48,6 +48,9 @@ const Service = () => {
               <section
                 id="service-card"
                 className="bg-[rgb(39,39,38)u] p-6 rounded-md border-2 border-[rgb(255,130,255)] hover:bg-[rgb(255,130,255)] hover:text-black transition-transform ease-in delay-200 duration-200 "
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
               >
                 <section className="flex justify-between items-end py-4">
                   <div>

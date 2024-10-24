@@ -70,7 +70,7 @@ const Portfolio = () => {
 
           {projectInfo.map(function (data) {
             return (
-              <section>
+              <section data-aos="zoom-in-down">
                 <section className="border-2 border-[rgb(255,130,255)] p-6 max-md:p-4 max-sm:p-2 rounded-md">
                   <a href={data.projectLink} target="blank">
                     <img
