@@ -7,7 +7,7 @@ const Skill = () => {
   return (
     <>
       {/* SKILL SECTION */}
-      <section className="text-white pt-20 grid grid-cols-2 gap-20 gap-y-12  max-md:grid-cols-1 max-sm:grid-cols-1 items-start">
+      <section className="dark:text-white text-black pt-20 grid grid-cols-2 gap-20 gap-y-12  max-md:grid-cols-1 max-sm:grid-cols-1 items-start">
         {/* left side */}
         <section>
           <header className="text-left max-md:text-center max-sm:text-center">
@@ -17,16 +17,7 @@ const Skill = () => {
             </p>
           </header>
           <p className="text-sm max-sm:text-center">{technicalSkillWriteup}</p>
-        </section>
-
-        {/* right side */}
-
-        <section className="text-sm font-semibold grid gap-y-4 justify-center">
-          {/* first row */}
-          <section className="flex gap-8 max-md:gap-4 max-sm:gap-0 items-center">
-            {/* html5 */}
-            <div className="bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75 rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="text-center">HTML5</span>
+          About me.
             </div>
 
             {/* javascript */}
@@ -49,7 +40,7 @@ const Skill = () => {
 
             {/* javascript */}
             <div className="bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="px-8">JAVASCRIPT</span>
+              <span className="px-8">TailwindCSS</span>
             </div>
           </section>
 
