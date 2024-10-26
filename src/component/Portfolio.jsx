@@ -84,7 +84,7 @@ const Portfolio = () => {
                   {data.projectTitle}
                 </p>
                 <p className="text-sm pb-5 max-md:text-center max-sm:text-center">
-                  {data.projectDescription}
+               UP   {data.projectDescription}
                 </p>
                 <a href={data.projectLink} target="blank">
                   <Button text="Live demo" icon={<CiGlobe />} />
