@@ -1,7 +1,7 @@
 import React from "react";
 
 const Skill = () => {
-  const technicalSkillWriteup = ` have a diverse set of technical skills that enable me to build dynamic, user-friendly, and optimized websites. From coding sleek interfaces to implementing SEO strategies, I am dedicated to creating seamless digital experiences. Here’s a snapshot of my core technical expertise:
+  const technicalSkillWriteup = `I have a diverse set of technical skills that enable me to build dynamic, user-friendly, and optimized websites. From coding sleek interfaces to implementing SEO strategies, I am dedicated to creating seamless digital experiences. Here’s a snapshot of my core technical expertise:
 
 `;
   return (

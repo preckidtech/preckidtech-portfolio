@@ -45,16 +45,22 @@ const Footer = () => {
             <div>
               <ul>
                 <li>
-                  <a href="#service-card">Home</a>
+                  <a href="#service-card" className="underline">
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <a href="#project-section">My projects.</a>
+                  <a href="#project-section" className="underline">
+                    My projects.
+                  </a>
                 </li>
                 <li>
-                  <a href="#about-section">About me</a>
+                  <a href="#about-section" className="underline">
+                    About me
+                  </a>
                 </li>
                 <li>
-                  <a href="#contact-section"></a>Contact me
+                  <a href="#contact-section" className="underline">Contact me</a>
                 </li>
                 {/* <li>
                   <a href=""></a>Blog

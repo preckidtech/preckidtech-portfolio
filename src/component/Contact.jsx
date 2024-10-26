@@ -63,7 +63,7 @@ const Contact = () => {
           </p>
         </header>
 
-        <section className="grid grid-cols-2 gap-20 gap-y-10 dark:bg-[rgb(29,29,29)] bg-gray-500 dark:text-white text-black w-5/6 mt-8 mx-auto p-8 rounded-lg max-md:grid-cols-1 max-sm:grid-cols-1">
+        <section className="grid grid-cols-2 gap-20 gap-y-10 dark:bg-[rgb(29,29,29)] bg-[#868585] dark:text-white text-black w-5/6 mt-8 mx-auto p-8 rounded-lg max-md:grid-cols-1 max-sm:grid-cols-1">
           <section>
             <section className="text-lg">
               <p>Have an amazing project idea? </p>
