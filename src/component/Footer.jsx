@@ -8,12 +8,12 @@ const Footer = () => {
     {
       handle: "instagram",
       icon: <FaInstagram />,
-      link: "https://api.whatsapp.com/message/K2JH7N3JZJ6BO1",
+      link: "https://www.instagram.com/preckidtech/",
     },
     {
       handle: "linkedin",
       icon: <FaLinkedinIn />,
-      link: "https://api.whatsapp.com/message/K2JH7N3JZJ6BO1",
+      link: "https://www.linkedin.com/in/oyebode-precious",
     },
     {
       handle: "facebook",
@@ -60,7 +60,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#contact-section" className="underline">Contact me</a>
+                  <a href="#contact-section" className="underline">
+                    Contact me
+                  </a>
                 </li>
                 {/* <li>
                   <a href=""></a>Blog
