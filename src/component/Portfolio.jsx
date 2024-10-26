@@ -57,41 +57,44 @@ const Portfolio = () => {
   ];
   return (
     <>
-      <section id="portfolio-section" className="py-10">
-        <header className="text-center pt-8">
-          <p className="text-sm text-gray-500">PORTFOLIO</p>
-          <p className="text-2xl font-bold pb-4">
-            Featured <span className="text-[rgb(255,130,255)]">projects.</span>
-          </p>
-        </header>
+      <section className="text-black  dark:text-white">
+        <section id="portfolio-section" className="py-10">
+          <header className="text-center pt-8">
+            <p className="text-sm text-gray-500">PORTFOLIO</p>
+            <p className="text-2xl font-bold pb-4">
+              Featured{" "}
+              <span className="text-[rgb(255,130,255)]">projects.</span>
+            </p>
+          </header>
 
-        <section className="grid grid-cols-3  items-start gap-8 max-md:grid-cols-1">
-          {/* Project Card */}
+          <section className="grid grid-cols-3  items-start gap-8 max-md:grid-cols-1">
+            {/* Project Card */}
 
-          {projectInfo.map(function (data) {
-            return (
-              <section data-aos="zoom-in-down">
-                <section className="border-2 border-[rgb(255,130,255)] p-6 max-md:p-4 max-sm:p-2 rounded-md">
+            {projectInfo.map(function (data) {
+              return (
+                <section data-aos="zoom-in-down">
+                  <section className="border-2 border-[rgb(255,130,255)] p-6 max-md:p-4 max-sm:p-2 rounded-md">
+                    <a href={data.projectLink} target="blank">
+                      <img
+                        className="h-52 object-cover scale-90 hover:scale-110 max-md:hover:scale-105 max-sm:hover:scale-105 transition-transform duration-500 rounded-md m-auto"
+                        src={data.projectImage}
+                        alt=""
+                      />
+                    </a>
+                  </section>
+                  <p className="font-bold text-2xl py-4 max-md:text-center max-sm:text-center">
+                    {data.projectTitle}
+                  </p>
+                  <p className="text-sm pb-5 max-md:text-center max-sm:text-center">
+                    UP {data.projectDescription}
+                  </p>
                   <a href={data.projectLink} target="blank">
-                    <img
-                      className="h-52 object-cover scale-90 hover:scale-110 max-md:hover:scale-105 max-sm:hover:scale-105 transition-transform duration-500 rounded-md m-auto"
-                      src={data.projectImage}
-                      alt=""
-                    />
+                    <Button text="Live demo" icon={<CiGlobe />} />
                   </a>
                 </section>
-                <p className="font-bold text-2xl py-4 max-md:text-center max-sm:text-center">
-                  {data.projectTitle}
-                </p>
-                <p className="text-sm pb-5 max-md:text-center max-sm:text-center">
-               UP   {data.projectDescription}
-                </p>
-                <a href={data.projectLink} target="blank">
-                  <Button text="Live demo" icon={<CiGlobe />} />
-                </a>
-              </section>
-            );
-          })}
+              );
+            })}
+          </section>
         </section>
       </section>
     </>

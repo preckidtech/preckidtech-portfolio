@@ -16,8 +16,17 @@ const Skill = () => {
               Technical<span className="text-[rgb(255,130,255)]"> skills.</span>
             </p>
           </header>
-          <p className="text-sm max-sm:text-center">{technicalSkillWriteup}</p>
-          About me.
+            <p className="text-sm max-sm:text-center">{technicalSkillWriteup}</p>
+          </section>
+
+          {/* right side */}
+
+          <section className="text-sm font-semibold grid gap-y-4 justify-center">
+            {/* first row */}
+            <section className="flex gap-8 max-md:gap-4 max-sm:gap-0 items-center">
+              {/* html5 */}
+              <div className="bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75 rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+                <span className="text-center">HTML5</span>
             </div>
 
             {/* javascript */}
