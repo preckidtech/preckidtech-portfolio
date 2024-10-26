@@ -41,7 +41,7 @@ const Contact = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-          
+
           // alert("failed");
         }
       );
@@ -51,7 +51,7 @@ const Contact = () => {
     <>
       <section
         id="contact-section"
-        className="bg-[rgb(18,18,19)] py-8 text-white"
+        className="dark:bg-[rgb(18,18,19)] bg-white py-8 dark:text-white text-black"
       >
         <header className="text-center">
           <p className="text-sm text-gray-500">GET IN TOUCH</p>
@@ -63,7 +63,7 @@ const Contact = () => {
           </p>
         </header>
 
-        <section className="grid grid-cols-2 gap-20 gap-y-10 bg-[rgb(29,29,29)] w-5/6 mt-8 mx-auto p-8 rounded-lg max-md:grid-cols-1 max-sm:grid-cols-1">
+        <section className="grid grid-cols-2 gap-20 gap-y-10 dark:bg-[rgb(29,29,29)] bg-gray-500 dark:text-white text-black w-5/6 mt-8 mx-auto p-8 rounded-lg max-md:grid-cols-1 max-sm:grid-cols-1">
           <section>
             <section className="text-lg">
               <p>Have an amazing project idea? </p>
@@ -108,7 +108,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Enter Name"
                 required
-                className="p-2 pl-10 rounded-md bg-transparent border-[1px] border-white w-full outline-none "
+                className="p-2 pl-10 rounded-md bg-transparent border-[1px] dark:border-white border-black w-full outline-none "
               />
               <span className="absolute left-3 top-10 text-[rgb(255,130,255)]">
                 <FaRegUser />
@@ -125,7 +125,7 @@ const Contact = () => {
                 type="email"
                 placeholder="Enter Email"
                 required
-                className="p-2 pl-10 rounded-md bg-transparent border-[1px] border-white w-full outline-none"
+                className="p-2 pl-10 rounded-md bg-transparent border-[1px] dark:border-white border-black w-full outline-none"
               />
               <span className="absolute left-3 top-10 text-[rgb(255,130,255)]">
                 <FaMailBulk />
@@ -141,7 +141,7 @@ const Contact = () => {
                 name="message"
                 placeholder="Enter your message"
                 required
-                className="p-2 pl-10 rounded-md bg-transparent border-[1px] border-white w-full outline-none "
+                className="p-2 pl-10 rounded-md bg-transparent border-[1px] dark:border-white border-black w-full outline-none "
               />
               <span className="absolute left-3 top-10 text-[rgb(255,130,255)]">
                 <FaMailBulk />

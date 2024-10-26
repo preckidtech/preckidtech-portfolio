@@ -42,6 +42,7 @@ const About = () => {
               <img
                 className="border-[1px] border-[rgb(255,130,255)]hover:ease-in-out w-full h-full rounded-full object-cover"
                 src={profilePics}
+                alt="profile-pics"
               />
               {/* <FaReact className="text-4xl absolute text-green-500 animate-pulse" />
                 <IoLogoCss3 className="text-4xl relative float-right text-green-500 animate-bounce" /> */}

@@ -21,21 +21,21 @@ const Skill = () => {
 
           {/* right side */}
 
-          <section className="text-sm font-semibold grid gap-y-4 justify-center">
+          <section className="text-sm font-semibold grid gap-y-2 justify-center">
             {/* first row */}
             <section className="flex gap-8 max-md:gap-4 max-sm:gap-0 items-center">
               {/* html5 */}
-              <div className="bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75 rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+              <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75 rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
                 <span className="text-center">HTML5</span>
             </div>
 
             {/* javascript */}
-            <div className="bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max max-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
+            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max max-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
               <span className="px-8">JAVASCRIPT</span>
             </div>
 
             {/* css */}
-            <div className="bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
               <span className="text-center">CSS3</span>
             </div>
           </section>
@@ -43,12 +43,12 @@ const Skill = () => {
           {/* second row */}
           <section className="flex gap-8 max-md:gap-4 max-sm:gap-0">
             {/* react container */}
-            <div className="bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
               <span className="px-12">React</span>
             </div>
 
             {/* javascript */}
-            <div className="bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
+            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
               <span className="px-8">TailwindCSS</span>
             </div>
           </section>
@@ -56,12 +56,12 @@ const Skill = () => {
           {/* third row */}
           <section className="flex gap-8 max-md:gap-4 max-sm:gap-0">
             {/* ui design container*/}
-            <div className="bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
+            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
               <span className="px-8">SEO </span>
             </div>
 
             {/* typescript container*/}
-            <div className="bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
               <span className="px-12">EMAIL AUTOMATION</span>
             </div>
           </section>
