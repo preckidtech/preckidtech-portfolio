@@ -5,7 +5,7 @@ import Skill from "./Skill";
 const Box = () => {
   return (
     <>
-      <section className="dark:bg-[rgb(29,28,28)] bg-white py-8 px-28 text-black dark:text-white max-md:px-16 max-sm:px-12">
+      <section className="dark:bg-[rgb(29,28,28)] bg-white py-8 text-black dark:text-white ">
         <About />
         <Skill />
       </section>

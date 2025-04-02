@@ -62,3 +62,12 @@ body {
   font-size: 18px;
   border-radius: 10px;
 }
+
+
+/* Tailwind default theme will take care of this for you, but you can add custom styles */
+/* This will handle the transitions between light and dark mode smoothly */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+

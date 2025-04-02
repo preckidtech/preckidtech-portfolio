@@ -6,17 +6,21 @@ const Skill = () => {
 `;
   return (
     <>
-      {/* SKILL SECTION */}
-      <section className="dark:text-white text-black pt-20 grid grid-cols-2 gap-20 gap-y-12  max-md:grid-cols-1 max-sm:grid-cols-1 items-start">
-        {/* left side */}
-        <section>
-          <header className="text-left max-md:text-center max-sm:text-center">
-            <p className="text-sm text-gray-500">SKILLS</p>
-            <p className="text-2xl font-bold pb-4">
-              Technical<span className="text-[rgb(255,130,255)]"> skills.</span>
+      <section className="border-pink-500 border-b-8">
+        {/* SKILL SECTION */}
+        <section className="dark:text-white text-black pt-20 grid grid-cols-2 gap-20 gap-y-12  max-md:grid-cols-1 max-sm:grid-cols-1 items-start mx-28 pb-8 max-md:mx-16 max-sm:x-12 ">
+          {/* left side */}
+          <section>
+            <header className="text-left max-md:text-center max-sm:text-center">
+              <p className="text-sm text-gray-500">SKILLS</p>
+              <p className="text-2xl font-bold pb-4">
+                Technical
+                <span className="text-[rgb(255,130,255)]"> skills.</span>
+              </p>
+            </header>
+            <p className="text-sm max-sm:text-center">
+              {technicalSkillWriteup}
             </p>
-          </header>
-            <p className="text-sm max-sm:text-center">{technicalSkillWriteup}</p>
           </section>
 
           {/* right side */}
@@ -27,43 +31,44 @@ const Skill = () => {
               {/* html5 */}
               <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75 rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
                 <span className="text-center">HTML5</span>
-            </div>
+              </div>
 
-            {/* javascript */}
-            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max max-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="px-8">JAVASCRIPT</span>
-            </div>
+              {/* javascript */}
+              <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max max-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
+                <span className="px-8">JAVASCRIPT</span>
+              </div>
 
-            {/* css */}
-            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="text-center">CSS3</span>
-            </div>
-          </section>
+              {/* css */}
+              <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-20 w-20 max-sm:h-16 max-sm:w-16 max-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+                <span className="text-center">CSS3</span>
+              </div>
+            </section>
 
-          {/* second row */}
-          <section className="flex gap-8 max-md:gap-4 max-sm:gap-0">
-            {/* react container */}
-            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="px-12">React</span>
-            </div>
+            {/* second row */}
+            <section className="flex gap-8 max-md:gap-4 max-sm:gap-0">
+              {/* react container */}
+              <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+                <span className="px-12">React</span>
+              </div>
 
-            {/* javascript */}
-            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="px-8">TailwindCSS</span>
-            </div>
-          </section>
+              {/* javascript */}
+              <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
+                <span className="px-8">TailwindCSS</span>
+              </div>
+            </section>
 
-          {/* third row */}
-          <section className="flex gap-8 max-md:gap-4 max-sm:gap-0">
-            {/* ui design container*/}
-            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="px-8">SEO </span>
-            </div>
+            {/* third row */}
+            <section className="flex gap-8 max-md:gap-4 max-sm:gap-0">
+              {/* ui design container*/}
+              <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-md grid items-center border-2 border-[rgb(255,130,255)]">
+                <span className="px-8">SEO </span>
+              </div>
 
-            {/* typescript container*/}
-            <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
-              <span className="px-12">EMAIL AUTOMATION</span>
-            </div>
+              {/* typescript container*/}
+              <div className="bg-[rgb(255,130,255)] dark:bg-[rgb(50,51,50)] h-16 max-sm:h-10 w-max ax-md:scale-90 max-sm:scale-75  rounded-full grid items-center border-2 border-[rgb(255,130,255)]">
+                <span className="px-12">EMAIL AUTOMATION</span>
+              </div>
+            </section>
           </section>
         </section>
       </section>

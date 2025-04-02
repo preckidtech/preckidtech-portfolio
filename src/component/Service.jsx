@@ -2,6 +2,9 @@ import React from "react";
 import { FaCode } from "react-icons/fa6";
 import { FaWix } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
+import { FaWordpress } from "react-icons/fa";
+import { GiTrophyCup } from "react-icons/gi";
+import { AiOutlineFileText } from "react-icons/ai";
 import Button from "./Button";
 
 const Service = () => {
@@ -22,59 +25,84 @@ const Service = () => {
         "I create aesthetic websites that capture your brand’s identity and drive results with effective SEO. From initial design concepts to final implementation, I ensure every element is optimized to meet your business objectives and enhance your online visibilit.",
     },
     {
-      icon: <MdMarkEmailRead />,
+      icon: <FaWordpress />,
       number: "03",
-      serviceName: "Email Design & Automation",
+      serviceName: "Wordpress Website Design",
       serviceDescription:
-        "I create impactful email campaigns with engaging designs and tailored automation. My approach ensures your emails reach the right audience, driving higher engagement and conversions.",
+        "I craft stunning WordPress websites that reflect your brand’s essence and deliver measurable results with top-notch SEO. From the initial design phase to the final launch, I ensure every aspect is optimized to achieve your business goals and boost your online presence. Plus, I offer 3 months of free website management to ensure your site runs smoothly post-launch.",
+    },
+    {
+      icon: <MdMarkEmailRead />,
+      number: "04",
+      serviceName: "Google My Business (GMB) Optimization",
+      serviceDescription:
+        "I optimize your Google My Business profile to improve local search visibility. From accurate business details to reviews and performance tracking, I ensure your profile helps attract more local customers.",
+    },
+    {
+      icon: <GiTrophyCup />,
+      number: "05",
+      serviceName: "SEO Website Optimization",
+      serviceDescription:
+        "I provide comprehensive SEO services to enhance your website's search engine ranking and drive organic traffic. From keyword research and on-page optimization to technical SEO and link-building, I ensure your website is fully optimized to attract and retain customers, boosting your online presence and ROI. ",
+    },
+    {
+      icon: <AiOutlineFileText />,
+      number: "06",
+      serviceName: "Website Technical Writing",
+      serviceDescription:
+        "I specialize in creating high-quality technical content for websites, including user guides, FAQs, and documentation. My writing enhances user experience, clarifies complex information, and improves SEO performance, ensuring that your website delivers value to both users and search engines.",
     },
   ];
   return (
     <>
-      <section className="text-black  dark:text-white">
-        <section>
-          <header className="text-center">
-            <p className="text-sm text-gray-500">SERVICES</p>
-            <p className="text-2xl font-bold pb-8">
-              What <span className="text-[hsl(300,100%,75%)]">I do.</span>
-            </p>
-          </header>
+      <section className="border-pink-500 border-b-8">
+        <section className="text-black  dark:text-white  mx-28 max-md:mx-16 max-sm:x-12 mb-8">
+          <section>
+            <header className="text-center">
+              <p className="text-sm text-gray-500">SERVICES</p>
+              <p className="text-2xl font-bold pb-8">
+                What <span className="text-[hsl(300,100%,75%)]">I do.</span>
+              </p>
+            </header>
 
-          {/* service card */}
-          <section className="grid grid-cols-3 gap-8 max-md:grid-cols-1 ">
-            {/* SERVICE CARD DISPLAY */}
+            {/* service card */}
+            <section className="grid grid-cols-3  gap-8 max-md:grid-cols-1 ">
+              {/* SERVICE CARD DISPLAY */}
 
-            {serviceInfo.map(function (data) {
-              return (
-                <section
-                  id="service-card"
-                  className="bg-[rgb(39,39,38)u] p-6 rounded-md border-2 border-[rgb(255,130,255)] hover:bg-[rgb(255,130,255)] hover:text-black transition-transform ease-in delay-200 duration-200 "
-                  data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500"
-                >
-                  <section className="flex justify-between items-end py-4">
-                    <div>
-                      <p className="text-4xl ">{data.icon}</p>
-                    </div>
-                    <div>
-                      <p className="text-gray-500 text-4xl font-bold">
-                        {data.number}
-                      </p>
-                    </div>
+              {serviceInfo.map(function (data) {
+                return (
+                  <section
+                    id="service-card"
+                    key={data.number}
+                    className="bg-[rgb(39,39,38)u] p-6 rounded-md border-2 border-[rgb(255,130,255)] hover:bg-[rgb(255,130,255)] hover:text-black transition-transform ease-in delay-200 duration-200 "
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                  >
+                    <section className="flex justify-between items-end py-4">
+                      <div>
+                        <p className="text-4xl ">{data.icon} </p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500 text-4xl font-bold">
+                          {data.number}
+                        </p>
+                      </div>
+                    </section>
+
+                    <section>
+                      <p className="font-bold text-xl">{data.serviceName} </p>
+                      <div className="bg-white w-1/3 h-[1px] my-2 line"></div>
+                      <p className="text-sm py-4">{data.serviceDescription}</p>
+                      <Button text="Learn more" />
+                    </section>
                   </section>
-
-                  <section>
-                    <p className="font-bold text-xl">{data.serviceName}</p>
-                    <div className="bg-white w-1/3 h-[1px] my-2 line"></div>
-                    <p className="text-sm py-4">{data.serviceDescription}</p>
-                    <Button text="Learn more" />
-                  </section>
-                </section>
-              );
-            })}
+                );
+              })}
+            </section>
           </section>
         </section>
+
       </section>
     </>
   );

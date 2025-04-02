@@ -3,6 +3,7 @@ import Button from "./Button";
 import logo from "../assets/logo/preckid logo.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { SiReaddotcv } from "react-icons/si";
+import ThemeToggle from "./ThemeToggle";
 // import Resume from "../assets/resume/preckid-tech/src/assets/resume/oyebode-precious.pdf";
 
 const Navbar = () => {
@@ -36,6 +37,7 @@ const Navbar = () => {
             <li>
               <a href="#contact-section">Contact Me</a>
             </li>
+            <ThemeToggle />
             <Button text="View resume" icon={<SiReaddotcv />} />
           </ul>
           {/* Mobile menu icon */}
@@ -87,6 +89,9 @@ const Navbar = () => {
             </li>
             <li>
               <Button text="View resume" icon={<SiReaddotcv />} />
+            </li>
+            <li>
+              <ThemeToggle />
             </li>
           </ul>
         </div>
