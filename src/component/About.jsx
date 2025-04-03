@@ -1,12 +1,9 @@
-import React from "react";
-import { FaHtml5 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-// import myPics from "../assets/profile image/my pics.g";
-import profilePics from "../assets/profile image/profile-picture.png";
-import profile from "../assets/profile image/profile.jpg";
+import React, { useEffect, useState } from "react";
+import profile from "../assets/profile image/profile.jpg"; // Ensure this path is correct
+
 const About = () => {
+  const [isInView, setIsInView] = useState(false);
+
   const aboutMe = {
     firstParagraph:
       "As a passionate frontend developer with expertise in SEO, I bring together creative design and technical optimization in every project. My work blends aesthetic appeal with the functionality needed for a seamless user experience.",
@@ -18,54 +15,68 @@ const About = () => {
       "With a deep understanding of SEO best practices, I ensure that every website I build achieves high visibility in search engines, driving traffic and results.",
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    const aboutSection = document.getElementById("about-section");
+    if (aboutSection) observer.observe(aboutSection);
+
+    return () => {
+      if (aboutSection) observer.unobserve(aboutSection);
+    };
+  }, []);
+
   return (
-    <>
-      <section className="class border-orange-500 border-b-8 b">
-        <section
-          id="about-section"
-          className="py-10 mx-28 max-md:mx-16 max-sm:x-12"
-        >
-          <header className="text-center pb-8">
-            <p className="text-sm text-gray-500">MY BIO</p>
-            <p className="text-2xl font-bold pb-4">
-              About <span className="text-[rgb(255,130,255)]">me.</span>
-            </p>
-          </header>
+    <section className="class border-orange-500 border-b-8 b">
+      <section
+        id="about-section"
+        className={`py-10 mx-28 max-md:mx-16 max-sm:x-12 transition-all duration-1000 ${
+          isInView ? "slideDown" : "opacity-0"
+        }`}
+      >
+        <header className="text-center pb-8">
+          <p className="text-sm text-gray-500">MY BIO</p>
+          <p className="text-2xl font-bold pb-4">
+            About <span className="text-[rgb(255,130,255)]">me.</span>
+          </p>
+        </header>
 
-          <section className="flex justify-center gap-20 max-md:grid  max-sm:grid gap-y-10  ">
-            <section className="">
-              {/* <div
-              id="profile-spin"
-              className="p-6 border-[1px] border-[rgb(255,130,255)] rounded-full w-80 h-80 max-sm:w-52 max-sm:p-2 max-sm:h-52 m-auto"
-            > */}
-              {/* <FaHtml5 className="absolute text-4xl text-green-500 animate-bounce " />
-              <IoLogoJavascript
-                id="spin"npx update-browserlist-db@latest
-                className="relative float-right text-4xl text-green-500 animate-spin"
-              /> */}
-              <div className="p-6 border-2 border-[rgb(255,130,255)] h-[300px] w-[300px] max-sm:h-[250px] max-sm:w-[250px] rounded-full overflow-hidden  m-auto">
-                <img
-                  className="border-[1px] border-[rgb(255,130,255)]hover:ease-in-out w-full h-full rounded-full object-cover"
-                  src={profile}
-                  alt="profile-pics"
-                />
-                {/* <FaReact className="text-4xl absolute text-green-500 animate-pulse" />
-                <IoLogoCss3 className="text-4xl relative float-right text-green-500 animate-bounce" /> */}
-              </div>
-              {/* </div> */}
-            </section>
+        <section className="flex justify-center gap-20 max-md:grid max-sm:grid gap-y-10">
+          <section className="relative">
+            {/* Profile Image */}
+            <div
+              className={`p-6 border-2 border-[rgb(255,130,255)] h-[300px] w-[300px] max-sm:h-[250px] max-sm:w-[250px] rounded-full overflow-hidden m-auto ${
+                isInView ? "zoomIn" : "opacity-0"
+              }`}
+            >
+              <img
+                className="border-[1px] border-[rgb(255,130,255)] w-full h-full rounded-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+                src={profile}
+                alt="profile-pics"
+              />
+            </div>
+          </section>
 
-            {/* About Me Content */}
-            <section className="text-left max-md:text-center max-sm:text-center max-w-[500px] max-sm:w-fit">
-              <p className="text-md pb-4">{aboutMe.firstParagraph}</p>
-              <p className="text-md pb-4">{aboutMe.secondParagraph}</p>
-
-              <p className="text-md pb-4">{aboutMe.thirdParagraph}</p>
-            </section>
+          {/* About Me Content */}
+          <section
+            className={`text-left max-md:text-center max-sm:text-center max-w-[500px] max-sm:w-fit ${
+              isInView ? "fadeInUp" : "opacity-0"
+            }`}
+          >
+            <p className="text-md pb-4">{aboutMe.firstParagraph}</p>
+            <p className="text-md pb-4">{aboutMe.secondParagraph}</p>
+            <p className="text-md pb-4">{aboutMe.thirdParagraph}</p>
           </section>
         </section>
       </section>
-    </>
+    </section>
   );
 };
 

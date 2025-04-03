@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCode } from "react-icons/fa6";
 import { FaWix } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
@@ -7,8 +7,14 @@ import { GiTrophyCup } from "react-icons/gi";
 import { AiOutlineFileText } from "react-icons/ai";
 import Button from "./Button";
 import ThemeToggle from "./ThemeToggle"; // Import the ThemeToggle component
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Service = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS animations
+  }, []);
+
   const serviceInfo = [
     {
       icon: <FaCode />,
@@ -44,7 +50,7 @@ const Service = () => {
       number: "05",
       serviceName: "SEO Website Optimization",
       serviceDescription:
-        "I provide comprehensive SEO services to enhance your website's search engine ranking and drive organic traffic. From keyword research and on-page optimization to technical SEO and link-building, I ensure your website is fully optimized to attract and retain customers, boosting your online presence and ROI. ",
+        "I provide comprehensive SEO services to enhance your website's search engine ranking and drive organic traffic. From keyword research and on-page optimization to technical SEO and link-building, I ensure your website is fully optimized to attract and retain customers, boosting your online presence and ROI.",
     },
     {
       icon: <AiOutlineFileText />,
@@ -71,7 +77,40 @@ const Service = () => {
             <ThemeToggle />
           </div>
 
-          {/* service card */}
+          {/* Frontend Developer Intro Section */}
+          <div
+            className="flex  flex-col mb-8"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <div className="flex justify-center items-center space-x-4 max-sm:space-x-0 mb-6 place-items-center">
+              <FaCode className="text-6xl animate-pulse" />
+              <h1 className="text-4xl font-bold text-center">
+                <span
+                  className="text-xl font-semibold"
+                  data-aos="fade-in"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  I am a{" "}
+                  <span className="text-[hsl(300,100%,75%)] text-cen">Professional</span>{" "}
+                  Frontend Developer
+                </span>
+              </h1>
+            </div>
+            <p
+              className="text-xl opacity-0 animate__animated animate__fadeIn max-sm:text-lg text-center"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="500"
+            >
+              I specialize in creating user-friendly, SEO-optimized, and
+              responsive web experiences that are both beautiful and functional.
+            </p>
+          </div>
+
+          {/* Service Cards Section */}
           <section className="grid grid-cols-3 gap-8 max-md:grid-cols-1">
             {serviceInfo.map((data, index) => (
               <section

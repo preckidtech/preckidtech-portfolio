@@ -71,3 +71,55 @@ html {
 }
 
 
+/* In your global CSS file */
+
+/* Keyframes for slide down effect */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for fade-in-up effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply slide down animation when element is in view */
+.slideDown {
+  animation: slideDown 1s ease-out forwards;
+}
+
+/* Apply zoom-in effect for profile image */
+.zoomIn {
+  animation: zoomIn 1s ease-out forwards;
+}
+
+/* Apply fade-in-up effect for content */
+.fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}

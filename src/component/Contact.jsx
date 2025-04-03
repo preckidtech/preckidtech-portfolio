@@ -1,8 +1,10 @@
-import React, { useRef } from "react"; // Added useRef import
+import React, { useEffect, useRef } from "react"; // Added useRef import
 import { BiPhoneCall } from "react-icons/bi";
 import { FaMailBulk, FaRegUser } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import emailjs from "@emailjs/browser";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 
 const Contact = () => {
   const contactHeadline =
@@ -18,6 +20,10 @@ const Contact = () => {
   // let message = document.querySelector(".message")
   console.log(regSucess);
   const form = useRef(); // Initialize useRef
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS animations
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -52,6 +58,8 @@ const Contact = () => {
       <section
         id="contact-section"
         className="dark:bg-[rgb(18,18,19)] bg-white py-8 dark:text-white text-black"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         <header className="text-center">
           <p className="text-sm text-gray-500">GET IN TOUCH</p>
@@ -63,7 +71,11 @@ const Contact = () => {
           </p>
         </header>
 
-        <section className="grid grid-cols-2 gap-20 gap-y-10 dark:bg-[rgb(29,29,29)] bg-[#868585] dark:text-white text-black w-5/6 mt-8 mx-auto p-8 rounded-lg max-md:grid-cols-1 max-sm:grid-cols-1">
+        <section
+          className="grid grid-cols-2 gap-20 gap-y-10 dark:bg-[rgb(29,29,29)] bg-[#868585] dark:text-white text-black w-5/6 mt-8 mx-auto p-8 rounded-lg max-md:grid-cols-1 max-sm:grid-cols-1"
+          data-aos="fade-left"
+          data-aos-duration="1200"
+        >
           <section>
             <section className="text-lg">
               <p>Have an amazing project idea? </p>
@@ -72,7 +84,11 @@ const Contact = () => {
               </p>
             </section>
 
-            <div className="flex gap-2 pt-3">
+            <div
+              className="flex gap-2 pt-3"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <span className="text-2xl">
                 <BiPhoneCall />
               </span>
@@ -81,14 +97,22 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="flex gap-2 pt-3">
+            <div
+              className="flex gap-2 pt-3"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <span className="text-2xl">
                 <FaMailBulk />
               </span>
               <p className="text-[rgb(255,130,255)]">{emailAddress}</p>
             </div>
 
-            <div className="flex gap-2 pt-3">
+            <div
+              className="flex gap-2 pt-3"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <span className="text-2xl">
                 <IoLocationOutline />
               </span>
@@ -98,7 +122,11 @@ const Contact = () => {
 
           {/* Input Fields */}
           <form ref={form} onSubmit={sendEmail}>
-            <div className="mb-4 relative">
+            <div
+              className="mb-4 relative"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <label className="text-md text-gray-700 block" htmlFor="fullName">
                 Full Name
               </label>
@@ -115,7 +143,11 @@ const Contact = () => {
               </span>
             </div>
 
-            <div className="mb-4 relative">
+            <div
+              className="mb-4 relative"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
               <label className="text-md text-gray-700 block" htmlFor="email">
                 Email
               </label>
@@ -132,7 +164,11 @@ const Contact = () => {
               </span>
             </div>
 
-            <div className="mb-4 relative">
+            <div
+              className="mb-4 relative"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
               <label className="text-md text-gray-700 block" htmlFor="message">
                 Message
               </label>
@@ -147,7 +183,11 @@ const Contact = () => {
                 <FaMailBulk />
               </span>
             </div>
-            <section className="reg-sucess hidden bg-white text-green-800 font-extrabold text-md py-3 text-center  rounded-md "></section>
+            <section
+              className="reg-sucess hidden bg-white text-green-800 font-extrabold text-md py-3 text-center  rounded-md "
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></section>
             <button
               type="submit"
               className="w-full py-2 mt-4 bg-[rgb(255,130,255)] text-black font-semibold rounded-md hover:bg-opacity-80 transition"
