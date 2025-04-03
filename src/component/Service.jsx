@@ -5,8 +5,7 @@ import { MdMarkEmailRead } from "react-icons/md";
 import { FaWordpress } from "react-icons/fa";
 import { GiTrophyCup } from "react-icons/gi";
 import { AiOutlineFileText } from "react-icons/ai";
-import Button from "./Button";
-import ThemeToggle from "./ThemeToggle"; // Import the ThemeToggle component
+import Button from "./Button";// Import the ThemeToggle component
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
@@ -74,9 +73,9 @@ const Service = () => {
           </header>
 
           {/* Add the ThemeToggle button here */}
-          <div className="absolute top-4 right-4">
+          {/* <div className="absolute top-4 right-4">
             <ThemeToggle />
-          </div>
+          </div> */}
 
           {/* Frontend Developer Intro Section */}
           <div
