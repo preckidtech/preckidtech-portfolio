@@ -1,6 +1,14 @@
 html,
 body {
   overflow-x: hidden;
-  background-color: purple;
+  /* background-color: purple; */
 }
 
+.service button {
+  display: none;
+}
+
+.service:hover button {
+  display: inline-block;
+  background-color: white;
+}

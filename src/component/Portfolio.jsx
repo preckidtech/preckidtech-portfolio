@@ -129,7 +129,13 @@ const Portfolio = () => {
                   {data.projectDescription}
                 </p>
                 <a href={data.projectLink} target="blank">
-                  <Button text="Live demo" icon={<CiGlobe />} />
+                  <Button
+                    text="Live demo"
+                    style={
+                      "px-4 flex gap-2 items-center max-sm:m-auto max-md:last:m-auto  py-2 text-center  bg-[rgb(255,130,255)] text-black rounded-md"
+                    }
+                    icon={<CiGlobe />}
+                  />
                 </a>
               </section>
             ))}
