@@ -6,21 +6,25 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   const socialHandle = [
     {
+      id: 1,
       handle: "instagram",
       icon: <FaInstagram />,
       link: "https://www.instagram.com/preckidtech/",
     },
     {
+      id: 2,
       handle: "linkedin",
       icon: <FaLinkedinIn />,
       link: "https://www.linkedin.com/in/oyebode-precious",
     },
     {
+      id: 3,
       handle: "facebook",
       icon: <FaFacebook />,
       link: "https://api.whatsapp.com/message/K2JH7N3JZJ6BO1",
     },
     {
+      id: 4,
       handle: "whatsapp",
       icon: <FaWhatsapp />,
       link: "https://api.whatsapp.com/message/K2JH7N3JZJ6BO1",
@@ -75,6 +79,7 @@ const Footer = () => {
               <div className="flex gap-4 text-[rgb(255,130,255)]">
                 {socialHandle.map(function (data) {
                   return (
+                    
                     <a href={data.link} target="blank">
                       <span className="text-xl">{data.icon}</span>
                     </a>
@@ -89,7 +94,7 @@ const Footer = () => {
       </section>
       <section className="bg-[rgb(29,29,28)] text-white py-6 border-t-[1px] border-gray">
         <p className="text-center max-sm:px-2">
-          2024 Copyright @{" "}
+          { new Date().getFullYear()} Copyright @{" "}
           <span className="text-[rgb(255,130,255)] font-extrabold">
             Preckid Tech
           </span>
