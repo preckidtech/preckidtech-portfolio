@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 import campusProjectImage from "../assets/project image/Homepage-Campus.png";
 import authentiseProjectImage from "../assets/project image/Authentise.png";
 import zionProjectImage from "../assets/project image/Zion-National.png";
 import physiciansProjectImage from "../assets/project image/Home-Physicians-CPA.png";
 import wechatProjectImage from "../assets/project image/WeChat.png";
 import dataEntryProjectImage from "../assets/project image/data entry.jpg";
-import zangadaImage from "../assets/project image/zangada website.jpg"
-import eptDesignImage from "../assets/project image/eptdesign.jpg"
-import kingsJournal from "../assets/project image/kings journal.jpg"
+import zangadaImage from "../assets/project image/zangada website.jpg";
+import eptDesignImage from "../assets/project image/eptdesign.jpg";
+import kingsJournal from "../assets/project image/kings journal.jpg";
 import Button from "./Button";
 import { CiGlobe } from "react-icons/ci";
 
@@ -47,7 +49,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      projectImage: kingsJournal, //kings journal
+      projectImage: kingsJournal,
       projectTitle: "Kings Journal",
       projectDescription:
         "A dynamic online journal providing insightful articles, academic research, and thought-provoking discussions across various disciplines to inform and inspire readers.",
@@ -88,47 +90,49 @@ const Portfolio = () => {
         "https://www.upwork.com/services/product/admin-customer-support-excel-data-entry-cleaning-formatting-reliable-solutions-for-data-entry-1773441192662433792?ref=project_share",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out" }); // Initialize AOS with custom duration and easing
+  }, []);
+
   return (
     <>
-      <section className="">
-        <section className="text-black  dark:text-white mx-28 max-md:mx-16 max-sm:mx-12">
-          <section id="portfolio-section" className="py-10">
-            <header className="text-center pt-8">
-              <p className="text-sm text-gray-500">PORTFOLIO</p>
-              <p className="text-2xl font-bold pb-4">
-                Featured{" "}
-                <span className="text-[rgb(255,130,255)]">projects.</span>
-              </p>
-            </header>
+      <section className="text-black dark:text-white mx-28 max-md:mx-16 max-sm:mx-12">
+        <section id="portfolio-section" className="py-10">
+          <header className="text-center pt-8">
+            <p className="text-sm text-gray-500">PORTFOLIO</p>
+            <p className="text-2xl font-bold pb-4">
+              Featured{" "}
+              <span className="text-[rgb(255,130,255)]">projects.</span>
+            </p>
+          </header>
 
-            <section className="grid grid-cols-3  items-start gap-8 max-md:grid-cols-1 ">
-              {/* Project Card */}
-
-              {projectInfo.map(function (data) {
-                return (
-                  <section data-aos="zoom-in-down">
-                    <section className="border-2 border-[rgb(255,130,255)] p-6 max-md:p-4 max-sm:p-2 rounded-md ">
-                      <a href={data.projectLink} target="blank">
-                        <img
-                          className="h-52 object-cover scale-90 hover:scale-110 max-md:hover:scale-105 max-sm:hover:scale-105 transition-transform duration-500 rounded-md m-auto"
-                          src={data.projectImage}
-                          alt=""
-                        />
-                      </a>
-                    </section>
-                    <p className="font-bold text-2xl py-4 max-md:text-center max-sm:text-center">
-                      {data.projectTitle}
-                    </p>
-                    <p className="text-sm pb-5 max-md:text-center max-sm:text-center">
-                      {data.projectDescription}
-                    </p>
-                    <a href={data.projectLink} target="blank">
-                      <Button text="Live demo" icon={<CiGlobe />} />
-                    </a>
-                  </section>
-                );
-              })}
-            </section>
+          <section className="grid grid-cols-3 items-start gap-8 max-md:grid-cols-1">
+            {projectInfo.map((data) => (
+              <section
+                data-aos="zoom-in-up"
+                key={data.id} // Add key for uniqueness
+              >
+                <section className="border-2 border-[rgb(255,130,255)] p-6 max-md:p-4 max-sm:p-2 rounded-md transform transition duration-500 hover:scale-105 hover:shadow-xl hover:rotate-3 hover:bg-gradient-to-r from-pink-500 to-purple-500">
+                  <a href={data.projectLink} target="blank">
+                    <img
+                      className="h-52 object-cover scale-90 hover:scale-110 max-md:hover:scale-105 max-sm:hover:scale-105 transition-transform duration-500 rounded-md m-auto"
+                      src={data.projectImage}
+                      alt={data.projectTitle}
+                    />
+                  </a>
+                </section>
+                <p className="font-bold text-2xl py-4 max-md:text-center max-sm:text-center">
+                  {data.projectTitle}
+                </p>
+                <p className="text-sm pb-5 max-md:text-center max-sm:text-center">
+                  {data.projectDescription}
+                </p>
+                <a href={data.projectLink} target="blank">
+                  <Button text="Live demo" icon={<CiGlobe />} />
+                </a>
+              </section>
+            ))}
           </section>
         </section>
       </section>

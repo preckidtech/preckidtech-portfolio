@@ -5,10 +5,9 @@ import { MdMarkEmailRead } from "react-icons/md";
 import { FaWordpress } from "react-icons/fa";
 import { GiTrophyCup } from "react-icons/gi";
 import { AiOutlineFileText } from "react-icons/ai";
-import Button from "./Button";// Import the ThemeToggle component
+import Button from "./Button"; // Import the ThemeToggle component
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-
 
 const Service = () => {
   useEffect(() => {
@@ -23,7 +22,6 @@ const Service = () => {
       serviceDescription:
         "I create custom websites that capture your brand’s essence while driving results through tailored SEO strategies. As a frontend developer and SEO specialist, I ensure each detail—from design to deployment—aligns with your vision and boosts your online presence.",
     },
-
     {
       icon: <FaWix />,
       number: "02",
@@ -63,7 +61,7 @@ const Service = () => {
 
   return (
     <>
-      <section className="">
+      <section className="bg-transparent">
         <section className="text-black dark:text-white mx-28 max-md:mx-16 max-sm:mx-12 mb-8">
           <header className="text-center">
             <p className="text-sm text-gray-500">SERVICES</p>
@@ -72,17 +70,11 @@ const Service = () => {
             </p>
           </header>
 
-          {/* Add the ThemeToggle button here */}
-          {/* <div className="absolute top-4 right-4">
-            <ThemeToggle />
-          </div> */}
-
-          {/* Frontend Developer Intro Section */}
           <div
-            className="flex  flex-col mb-8"
+            className="flex flex-col mb-8"
             data-aos="fade-up"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-easing="ease-out"
           >
             <div className="flex justify-center items-center space-x-4 max-sm:space-x-0 mb-6 place-items-center">
               <FaCode className="text-6xl animate-pulse" />
@@ -94,7 +86,9 @@ const Service = () => {
                   data-aos-delay="200"
                 >
                   I am a{" "}
-                  <span className="text-[hsl(300,100%,75%)] text-cen">Professional</span>{" "}
+                  <span className="text-[hsl(300,100%,75%)] text-cen">
+                    Professional
+                  </span>{" "}
                   Frontend Developer
                 </span>
               </h1>
@@ -102,7 +96,7 @@ const Service = () => {
             <p
               className="text-xl opacity-0 animate__animated animate__fadeIn max-sm:text-lg text-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-delay="500"
             >
               I specialize in creating user-friendly, SEO-optimized, and
@@ -110,16 +104,15 @@ const Service = () => {
             </p>
           </div>
 
-          {/* Service Cards Section */}
           <section className="grid grid-cols-3 gap-8 max-md:grid-cols-1">
             {serviceInfo.map((data, index) => (
               <section
-                key={index} // Fix key in map
+                key={index}
                 id="service-card"
                 className="p-6 rounded-md border-2 border-[rgb(255,130,255)] hover:bg-[rgb(255,130,255)] hover:text-black transition-transform ease-in delay-200 duration-200"
                 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1000"
               >
                 <section className="flex justify-between items-end py-4">
                   <div>
@@ -142,7 +135,6 @@ const Service = () => {
             ))}
           </section>
         </section>
-
       </section>
     </>
   );

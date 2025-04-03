@@ -1,9 +1,6 @@
-* {
+html,
+body {
   overflow-x: hidden;
+  background-color: purple;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
