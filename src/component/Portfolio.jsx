@@ -90,7 +90,7 @@ const Portfolio = () => {
   ];
   return (
     <>
-      <section className="border-pink-500 border-b-8">
+      <section className="">
         <section className="text-black  dark:text-white mx-28 max-md:mx-16 max-sm:mx-12">
           <section id="portfolio-section" className="py-10">
             <header className="text-center pt-8">

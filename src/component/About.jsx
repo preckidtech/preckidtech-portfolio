@@ -34,7 +34,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="class border-orange-500 border-b-8 b">
+    <section className="">
       <section
         id="about-section"
         className={`py-10 mx-28 max-md:mx-16 max-sm:x-12 transition-all duration-1000 ${

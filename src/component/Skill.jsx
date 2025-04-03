@@ -10,7 +10,7 @@ const Skill = () => {
   }, []);
 
   return (
-    <section className="border-pink-500 border-b-8">
+    <section className="">
       {/* SKILL SECTION */}
       <section className="dark:text-white text-black pt-20 grid grid-cols-2 gap-20 gap-y-12 max-md:grid-cols-1 max-sm:grid-cols-1 items-start mx-28 pb-8 max-md:mx-16 max-sm:x-12">
         {/* Left side */}

@@ -10,6 +10,7 @@ import ThemeToggle from "./ThemeToggle"; // Import the ThemeToggle component
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
+
 const Service = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS animations
@@ -63,7 +64,7 @@ const Service = () => {
 
   return (
     <>
-      <section className="border-pink-500 border-b-8">
+      <section className="">
         <section className="text-black dark:text-white mx-28 max-md:mx-16 max-sm:mx-12 mb-8">
           <header className="text-center">
             <p className="text-sm text-gray-500">SERVICES</p>
@@ -142,6 +143,7 @@ const Service = () => {
             ))}
           </section>
         </section>
+
       </section>
     </>
   );
