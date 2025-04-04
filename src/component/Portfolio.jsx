@@ -22,6 +22,7 @@ const Portfolio = () => {
       projectDescription:
         "Zangada DMC connects travelers with unique, tailored safari experiences, promoting cultural exploration and adventure while ensuring seamless planning and exceptional service.",
       projectLink: "https://zangadadmc.com/",
+      alt: "Tailored safari experiences with Zangada DMC, promoting cultural exploration and adventure across Africa",
     },
     {
       id: 2,
@@ -30,6 +31,7 @@ const Portfolio = () => {
       projectDescription:
         "Campus Without Walls connects educators with project-based curriculum resources, enhancing teaching and supporting professional development.",
       projectLink: "https://campuswithoutwalls.org/",
+      alt: "Campus Without Walls: Connecting educators with project-based curriculum resources for professional development",
     },
     {
       id: 3,
@@ -38,6 +40,7 @@ const Portfolio = () => {
       projectDescription:
         "A platform that streamlines manufacturing workflows with data-driven automation, enabling real-time collaboration and enhanced productivity in industrial operations.",
       projectLink: "https://www.authentise.com/",
+      alt: "Authentise: Streamlining manufacturing workflows with data-driven automation for enhanced productivity",
     },
     {
       id: 4,
@@ -46,6 +49,7 @@ const Portfolio = () => {
       projectDescription:
         "A vibrant photography blog that captures the beauty of Zion National Park through inspiring stories, adventure tips, and breathtaking visuals.",
       projectLink: "https://www.zionadventurephotog.com/blog",
+      alt: "Zion Adventure Photog: A vibrant photography blog capturing the beauty of Zion National Park",
     },
     {
       id: 5,
@@ -54,6 +58,7 @@ const Portfolio = () => {
       projectDescription:
         "A dynamic online journal providing insightful articles, academic research, and thought-provoking discussions across various disciplines to inform and inspire readers.",
       projectLink: "https://kingsjournals.com.ng/index.php/KJEIM",
+      alt: "Kings Journal: An online journal providing insightful articles, academic research, and thought-provoking discussions",
     },
     {
       id: 6,
@@ -62,6 +67,7 @@ const Portfolio = () => {
       projectDescription:
         "Specialized accounting services tailored for physicians, offering personalized tax strategies, financial planning, and cloud-based bookkeeping to help doctors manage their finances efficiently.",
       projectLink: "https://physicianscpa.ca/",
+      alt: "Physicians CPA: Specialized accounting services tailored for physicians, offering tax strategies and financial planning",
     },
     {
       id: 7,
@@ -71,6 +77,7 @@ const Portfolio = () => {
         "Fast and easy WeChat account setup and verification support.",
       projectLink:
         "https://www.upwork.com/services/product/admin-customer-support-wechat-account-verification-registration-service-1767336960924708864?ref=project_share",
+      alt: "Wechat Verification: Fast and easy account setup and verification support for WeChat users",
     },
     {
       id: 8,
@@ -79,6 +86,7 @@ const Portfolio = () => {
       projectDescription:
         "Crafting landscapes that inspire memorable moments and meaningful experiences. From public spaces to private gardens, we bring stories of place to life through thoughtful design.",
       projectLink: "https://eptdesign.com/",
+      alt: "EPT Design: Crafting landscapes that inspire memorable moments and meaningful experiences through thoughtful design",
     },
     {
       id: 9,
@@ -88,6 +96,7 @@ const Portfolio = () => {
         "Accurate Excel data entry, cleaning, and formatting for efficient results.",
       projectLink:
         "https://www.upwork.com/services/product/admin-customer-support-excel-data-entry-cleaning-formatting-reliable-solutions-for-data-entry-1773441192662433792?ref=project_share",
+      alt: "Accurate Excel data entry, cleaning, and formatting services for efficient and reliable results",
     },
   ];
 
@@ -118,7 +127,7 @@ const Portfolio = () => {
                     <img
                       className="h-52 object-cover scale-90 hover:scale-110 max-md:hover:scale-105 max-sm:hover:scale-105 transition-transform duration-500 rounded-md m-auto"
                       src={data.projectImage}
-                      alt={data.projectTitle}
+                      alt={data.alt}
                     />
                   </a>
                 </section>
