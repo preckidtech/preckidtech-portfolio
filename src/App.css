@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -11,4 +15,9 @@ body {
 .service:hover button {
   display: inline-block;
   background-color: white;
+  
+}
+
+.service:hover {
+  cursor: pointer;
 }

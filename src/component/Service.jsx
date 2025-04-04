@@ -61,7 +61,7 @@ const Service = () => {
 
   return (
     <>
-      <section className="bg-transparent">
+      <section id="service-component" className="bg-transparent">
         <section className="text-black dark:text-white mx-28 max-md:mx-16 max-sm:mx-12 mb-8">
           <header className="text-center">
             <p className="text-sm text-gray-500">SERVICES</p>

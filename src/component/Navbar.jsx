@@ -37,7 +37,13 @@ const Navbar = () => {
               <a href="#contact-section">Contact Me</a>
             </li>
 
-            <Button text="View resume" icon={<SiReaddotcv />} />
+            <Button
+              text="View resume"
+              icon={<SiReaddotcv />}
+              style={
+                "px-4 flex gap-2 items-center max-sm:m-auto max-md:last:m-auto  py-2 text-center   bg-[rgb(255,130,255)] text-black rounded-md"
+              }
+            />
           </ul>
           {/* Mobile menu icon */}
           <div
