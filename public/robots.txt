@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin/  # (Optional, if you want to block search engines from specific areas)
+Sitemap: https://www.preckidtech.com.ng/sitemap.xml
