@@ -51,6 +51,8 @@ const About = () => {
                 className="border-[1px] border-[rgb(255,130,255)] w-full h-full rounded-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
                 src={profile}
                 alt="Oyebode Precious Isaac – Front-End Developer, React, WordPress, Wix Expert in Nigeria"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </section>

@@ -128,6 +128,8 @@ const Portfolio = () => {
                       className="h-52 object-cover scale-90 hover:scale-110 max-md:hover:scale-105 max-sm:hover:scale-105 transition-transform duration-500 rounded-md m-auto"
                       src={data.projectImage}
                       alt={data.alt}
+                      loading="lazy"
+                      decoding="async"
                     />
                   </a>
                 </section>
